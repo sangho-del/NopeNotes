@@ -61,7 +61,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/ic_work"
+                        android:src="@drawable/ic_ceo"
                         app:tint="#4285F4" />
 
                     <LinearLayout
@@ -110,7 +110,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/ic_category"
+                        android:src="@drawable/ic_boss"
                         app:tint="#E53935" />
 
                     <LinearLayout
@@ -159,7 +159,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/ic_friend"
+                        android:src="@drawable/ic_myteam"
                         app:tint="#FFC107" />
 
                     <LinearLayout
@@ -208,7 +208,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/ic_list"
+                        android:src="@drawable/ic_another_partment"
                         app:tint="#4CAF50" />
 
                     <LinearLayout
@@ -257,7 +257,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/ic_school"
+                        android:src="@drawable/ic_partnerboss"
                         app:tint="#9C27B0" />
 
                     <LinearLayout
@@ -306,7 +306,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/ic_bad"
+                        android:src="@drawable/ic_client"
                         app:tint="#FF9800" />
 
                     <LinearLayout

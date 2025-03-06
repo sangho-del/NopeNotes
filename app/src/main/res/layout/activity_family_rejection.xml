@@ -110,7 +110,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/ic_friend"
+                        android:src="@drawable/ic_bro"
                         app:tint="#E53935" />
 
                     <LinearLayout
@@ -159,7 +159,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/ic_school"
+                        android:src="@drawable/ic_relative"
                         app:tint="#FFC107" />
 
                     <LinearLayout
