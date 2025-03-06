@@ -2,7 +2,6 @@ package com.sanghoproject.nopenotes
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 
@@ -44,7 +43,6 @@ class EmotionRejectionActivity : AppCompatActivity() {
     }
 
     private fun navigateToRejectionList(title: String, emotionType: String) {
-        Toast.makeText(this, "$title 멘트 목록으로 이동합니다", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, EmotionRejectionListActivity::class.java).apply {
             putExtra("TITLE", title)
             putExtra("EMOTION_TYPE", emotionType)

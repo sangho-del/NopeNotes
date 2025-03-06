@@ -32,6 +32,10 @@
             android:label="직장 관계 거절 멘트"
             android:theme="@style/Theme.NopeNotes" />
         <activity
+            android:name=".WorkRejectionDetailActivity"
+            android:label="직장 관계 거절 멘트 상세"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
             android:name=".FriendRejectionActivity"
             android:label="친구 관계 거절 멘트"
             android:theme="@style/Theme.NopeNotes" />
@@ -40,12 +44,20 @@
             android:label="가족 관계 거절 멘트"
             android:theme="@style/Theme.NopeNotes" />
         <activity
+            android:name=".FamilyRejectionDetailActivity"
+            android:label="가족 관계 거절 멘트 상세"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
             android:name=".SpouseRejectionActivity"
             android:label="부부 관계 거절 멘트"
             android:theme="@style/Theme.NopeNotes" />
         <activity
             android:name=".LoverRejectionActivity"
             android:label="연인 관계 거절 멘트"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
+            android:name=".LoverRejectionDetailActivity"
+            android:label="연인 관계 거절 멘트 상세"
             android:theme="@style/Theme.NopeNotes" />
         <activity
             android:name=".SeniorJuniorRejectionActivity"

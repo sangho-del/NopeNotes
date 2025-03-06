@@ -2,7 +2,6 @@ package com.sanghoproject.nopenotes
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -66,7 +65,7 @@ class CategoryRejectionActivity : AppCompatActivity() {
         categoryItems.add(
             CategoryItem(
                 5,
-                "연인",
+                "연인, 소개팅",
                 "애인, 데이트 상대와의 거절",
                 R.drawable.ic_couple
             )
@@ -106,37 +105,31 @@ class CategoryRejectionActivity : AppCompatActivity() {
 
     // 각 카테고리별 화면 이동 함수
     private fun navigateToWorkRejection() {
-        Toast.makeText(this, "직장 관계 거절 멘트 화면으로 이동합니다", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, WorkRejectionActivity::class.java)
         startActivity(intent)
     }
 
     private fun navigateToFriendRejection() {
-        Toast.makeText(this, "친구 관계 거절 멘트 화면으로 이동합니다", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, FriendRejectionActivity::class.java)
         startActivity(intent)
     }
 
     private fun navigateToFamilyRejection() {
-        Toast.makeText(this, "가족 관계 거절 멘트 화면으로 이동합니다", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, FamilyRejectionActivity::class.java)
         startActivity(intent)
     }
 
     private fun navigateToSpouseRejection() {
-        Toast.makeText(this, "부부 관계 거절 멘트 화면으로 이동합니다", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, SpouseRejectionActivity::class.java)
         startActivity(intent)
     }
 
     private fun navigateToLoverRejection() {
-        Toast.makeText(this, "연인 관계 거절 멘트 화면으로 이동합니다", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, LoverRejectionActivity::class.java)
         startActivity(intent)
     }
 
     private fun navigateToSeniorJuniorRejection() {
-        Toast.makeText(this, "선배/후배 관계 거절 멘트 화면으로 이동합니다", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, SeniorJuniorRejectionActivity::class.java)
         startActivity(intent)
     }

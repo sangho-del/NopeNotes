@@ -1,60 +1,65 @@
 package com.sanghoproject.nopenotes
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 
 class FamilyRejectionActivity : AppCompatActivity() {
 
-    private lateinit var listView: ListView
     private lateinit var tvTitle: TextView
     private lateinit var tvSubtitle: TextView
-    private val rejectionPhrases = ArrayList<String>()
+    
+    private lateinit var cardParent: CardView
+    private lateinit var cardSibling: CardView
+    private lateinit var cardRelative: CardView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_rejection_phrases)
+        setContentView(R.layout.activity_family_rejection)
 
         initializeViews()
         setupTitles()
-        prepareRejectionPhrases()
-        setupListView()
+        setupClickListeners()
     }
 
     private fun initializeViews() {
-        listView = findViewById(R.id.listViewPhrases)
         tvTitle = findViewById(R.id.tvTitle)
         tvSubtitle = findViewById(R.id.tvSubtitle)
+        
+        // 카드뷰 초기화
+        cardParent = findViewById(R.id.cardParent)
+        cardSibling = findViewById(R.id.cardSibling)
+        cardRelative = findViewById(R.id.cardRelative)
     }
 
     private fun setupTitles() {
-        tvTitle.text = "가족 관계 거절 멘트"
-        tvSubtitle.text = "가족에게 사용할 수 있는 적절한 거절 표현"
+        tvTitle.text = "가족 관계별 거절 멘트"
+        tvSubtitle.text = "가족 내 관계에 따른 적절한 거절 멘트를 찾아보세요"
     }
-
-    private fun prepareRejectionPhrases() {
-        // 가족 관계에서 사용할 수 있는 거절 멘트 추가
-        rejectionPhrases.add("지금은 개인 시간이 필요해서 혼자 있고 싶어요.")
-        rejectionPhrases.add("오늘은 너무 피곤해서 다음에 도와드릴게요.")
-        rejectionPhrases.add("지금 하고 있는 일이 있어서 나중에 부탁드려요.")
-        rejectionPhrases.add("그건 제 성향과 맞지 않아서 어려울 것 같아요.")
-        rejectionPhrases.add("지금은 다른 계획이 있어서 함께하기 어려워요.")
-        rejectionPhrases.add("그 일은 제가 잘 모르는 분야라 도움이 안 될 것 같아요.")
-        rejectionPhrases.add("오늘은 친구와 약속이 있어서 집에 일찍 들어오기 어려워요.")
-        rejectionPhrases.add("제 일정을 먼저 확인해봐야 할 것 같아요.")
-        rejectionPhrases.add("지금은 제 개인 시간이 필요해서 나중에 이야기해요.")
-        rejectionPhrases.add("그건 제가 결정할 문제라고 생각해요.")
-        rejectionPhrases.add("지금은 다른 중요한 일이 있어서 집안일을 도와드리기 어려워요.")
-        rejectionPhrases.add("그 문제는 제가 스스로 해결하고 싶어요.")
-        rejectionPhrases.add("지금은 휴식이 필요해서 다음에 함께해요.")
-        rejectionPhrases.add("그건 제 취향이 아니라서 함께하기 어려울 것 같아요.")
-        rejectionPhrases.add("지금은 다른 일에 집중하고 있어서 방해받고 싶지 않아요.")
+    
+    private fun setupClickListeners() {
+        // 각 카드뷰에 클릭 리스너 설정
+        cardParent.setOnClickListener {
+            navigateToDetailScreen("부모님과 나의 관계", "부모님의 요청이나 제안을 거절하는 상황")
+        }
+        
+        cardSibling.setOnClickListener {
+            navigateToDetailScreen("형제 간의 관계", "형제자매와의 거절 상황")
+        }
+        
+        cardRelative.setOnClickListener {
+            navigateToDetailScreen("친척과의 관계", "친척들과의 거절 상황")
+        }
     }
-
-    private fun setupListView() {
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, rejectionPhrases)
-        listView.adapter = adapter
+    
+    private fun navigateToDetailScreen(title: String, subtitle: String) {
+        val intent = Intent(this, FamilyRejectionDetailActivity::class.java).apply {
+            putExtra("TITLE", title)
+            putExtra("SUBTITLE", subtitle)
+            putExtra("CATEGORY", title)
+        }
+        startActivity(intent)
     }
 } 

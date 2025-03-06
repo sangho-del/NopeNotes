@@ -2,7 +2,6 @@ package com.sanghoproject.nopenotes
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -106,37 +105,31 @@ class MainActivity : AppCompatActivity() {
 
     // 각 메뉴 아이템별 화면 이동 함수
     private fun navigateToCategoryRejection() {
-        Toast.makeText(this, "카테고리별 거절 화면으로 이동합니다", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, CategoryRejectionActivity::class.java)
         startActivity(intent)
     }
 
     private fun navigateToSearchRejection() {
-        Toast.makeText(this, "거절 멘트 검색 화면으로 이동합니다", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, SearchRejectionActivity::class.java)
         startActivity(intent)
     }
 
     private fun navigateToAIRecommendation() {
-        Toast.makeText(this, "거절 멘트 추천 화면으로 이동합니다", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, RecommendRejectionActivity::class.java)
         startActivity(intent)
     }
 
     private fun navigateToHumorRejection() {
-        Toast.makeText(this, "유머 거절 화면으로 이동합니다", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, HumorRejectionActivity::class.java)
         startActivity(intent)
     }
 
     private fun navigateToRejectionTips() {
-        Toast.makeText(this, "거절 팁 화면으로 이동합니다", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, RejectionTipsActivity::class.java)
         startActivity(intent)
     }
 
     private fun navigateToEmotionRejection() {
-        Toast.makeText(this, "감정별 거절 멘트 화면으로 이동합니다", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, EmotionRejectionActivity::class.java)
         startActivity(intent)
     }

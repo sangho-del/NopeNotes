@@ -1,60 +1,83 @@
 package com.sanghoproject.nopenotes
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 
 class WorkRejectionActivity : AppCompatActivity() {
 
-    private lateinit var listView: ListView
     private lateinit var tvTitle: TextView
     private lateinit var tvSubtitle: TextView
-    private val rejectionPhrases = ArrayList<String>()
+    
+    private lateinit var cardBossEmployee: CardView
+    private lateinit var cardSupervisorSubordinate: CardView
+    private lateinit var cardColleague: CardView
+    private lateinit var cardOtherDepartment: CardView
+    private lateinit var cardSeniorJunior: CardView
+    private lateinit var cardClient: CardView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_rejection_phrases)
+        setContentView(R.layout.activity_work_rejection)
 
         initializeViews()
         setupTitles()
-        prepareRejectionPhrases()
-        setupListView()
+        setupClickListeners()
     }
 
     private fun initializeViews() {
-        listView = findViewById(R.id.listViewPhrases)
         tvTitle = findViewById(R.id.tvTitle)
         tvSubtitle = findViewById(R.id.tvSubtitle)
+        
+        // 카드뷰 초기화
+        cardBossEmployee = findViewById(R.id.cardBossEmployee)
+        cardSupervisorSubordinate = findViewById(R.id.cardSupervisorSubordinate)
+        cardColleague = findViewById(R.id.cardColleague)
+        cardOtherDepartment = findViewById(R.id.cardOtherDepartment)
+        cardSeniorJunior = findViewById(R.id.cardSeniorJunior)
+        cardClient = findViewById(R.id.cardClient)
     }
 
     private fun setupTitles() {
-        tvTitle.text = "직장 관계 거절 멘트"
-        tvSubtitle.text = "직장에서 사용할 수 있는 적절한 거절 표현"
+        tvTitle.text = "직장 관계별 거절 멘트"
+        tvSubtitle.text = "직장 내 관계에 따른 적절한 거절 멘트를 찾아보세요"
     }
-
-    private fun prepareRejectionPhrases() {
-        // 직장 관계에서 사용할 수 있는 거절 멘트 추가
-        rejectionPhrases.add("현재 진행 중인 업무가 있어 지금은 어렵습니다.")
-        rejectionPhrases.add("일정을 확인해보니 해당 시간에는 다른 미팅이 있습니다.")
-        rejectionPhrases.add("제 업무 범위를 벗어나는 일이라 도움을 드리기 어렵습니다.")
-        rejectionPhrases.add("지금 맡은 프로젝트에 집중해야 해서 추가 업무는 어렵습니다.")
-        rejectionPhrases.add("부서 내 규정상 해당 요청은 수락하기 어렵습니다.")
-        rejectionPhrases.add("상급자와 상의 후 결정해야 할 사항입니다.")
-        rejectionPhrases.add("회사 정책상 그런 요청은 수락할 수 없습니다.")
-        rejectionPhrases.add("현재 업무량으로는 추가 업무를 맡기 어렵습니다.")
-        rejectionPhrases.add("해당 업무는 다른 부서에 문의하시는 것이 적절합니다.")
-        rejectionPhrases.add("지금은 다른 중요한 마감이 있어 참석하기 어렵습니다.")
-        rejectionPhrases.add("해당 요청은 공식적인 채널을 통해 진행해 주셔야 합니다.")
-        rejectionPhrases.add("회의 일정이 겹쳐 참석이 어렵습니다.")
-        rejectionPhrases.add("현재 우선순위가 높은 업무가 있어 지금은 어렵습니다.")
-        rejectionPhrases.add("해당 업무는 제 전문 분야가 아니라 도움을 드리기 어렵습니다.")
-        rejectionPhrases.add("팀 리더와 상의 후 답변 드리겠습니다.")
+    
+    private fun setupClickListeners() {
+        // 각 카드뷰에 클릭 리스너 설정
+        cardBossEmployee.setOnClickListener {
+            navigateToDetailScreen("사장-직원", "사장님과 직원 간의 거절 상황")
+        }
+        
+        cardSupervisorSubordinate.setOnClickListener {
+            navigateToDetailScreen("상사-부하", "상사와 부하 직원 간의 거절 상황")
+        }
+        
+        cardColleague.setOnClickListener {
+            navigateToDetailScreen("동료 간의 관계", "같은 팀 동료들과의 거절")
+        }
+        
+        cardOtherDepartment.setOnClickListener {
+            navigateToDetailScreen("타 부서와 나의 관계", "다른 부서와의 협업 거절")
+        }
+        
+        cardSeniorJunior.setOnClickListener {
+            navigateToDetailScreen("선배-후배", "직장 내 선후배 관계에서의 거절")
+        }
+        
+        cardClient.setOnClickListener {
+            navigateToDetailScreen("거래처/고객", "거래처나 고객과의 거절 상황")
+        }
     }
-
-    private fun setupListView() {
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, rejectionPhrases)
-        listView.adapter = adapter
+    
+    private fun navigateToDetailScreen(title: String, subtitle: String) {
+        val intent = Intent(this, WorkRejectionDetailActivity::class.java).apply {
+            putExtra("TITLE", title)
+            putExtra("SUBTITLE", subtitle)
+            putExtra("CATEGORY", title)
+        }
+        startActivity(intent)
     }
 } 
