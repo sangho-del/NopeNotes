@@ -159,7 +159,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/ic_relative"
+                        android:src="@drawable/ic_relatives"
                         app:tint="#FFC107" />
 
                     <LinearLayout
