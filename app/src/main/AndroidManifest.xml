@@ -23,6 +23,58 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CategoryRejectionActivity"
+            android:label="관계별 거절 멘트"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
+            android:name=".WorkRejectionActivity"
+            android:label="직장 관계 거절 멘트"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
+            android:name=".FriendRejectionActivity"
+            android:label="친구 관계 거절 멘트"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
+            android:name=".FamilyRejectionActivity"
+            android:label="가족 관계 거절 멘트"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
+            android:name=".SpouseRejectionActivity"
+            android:label="부부 관계 거절 멘트"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
+            android:name=".LoverRejectionActivity"
+            android:label="연인 관계 거절 멘트"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
+            android:name=".SeniorJuniorRejectionActivity"
+            android:label="선배/후배 관계 거절 멘트"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
+            android:name=".SearchRejectionActivity"
+            android:label="거절 멘트 검색"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
+            android:name=".RecommendRejectionActivity"
+            android:label="거절 멘트 추천"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
+            android:name=".HumorRejectionActivity"
+            android:label="유머 거절 멘트"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
+            android:name=".RejectionTipsActivity"
+            android:label="거절 팁 &amp; 분위기 풀기"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
+            android:name=".EmotionRejectionActivity"
+            android:label="감정별 거절 멘트"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
+            android:name=".EmotionRejectionListActivity"
+            android:label="감정별 거절 멘트 목록"
+            android:theme="@style/Theme.NopeNotes" />
     </application>
 
 </manifest>
