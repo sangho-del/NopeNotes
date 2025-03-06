@@ -67,6 +67,13 @@ class RejectionTipsActivity : AppCompatActivity() {
         arrowQuestion = findViewById(R.id.arrowQuestion)
         arrowHumor = findViewById(R.id.arrowHumor)
         arrowAlternative = findViewById(R.id.arrowAlternative)
+        
+        // 초기 화살표 아이콘 설정
+        arrowTopicChange.setImageResource(R.drawable.ic_arrow_down)
+        arrowCommonInterest.setImageResource(R.drawable.ic_arrow_down)
+        arrowQuestion.setImageResource(R.drawable.ic_arrow_down)
+        arrowHumor.setImageResource(R.drawable.ic_arrow_down)
+        arrowAlternative.setImageResource(R.drawable.ic_arrow_down)
     }
 
     private fun setupTitles() {
@@ -105,10 +112,10 @@ class RejectionTipsActivity : AppCompatActivity() {
         // 내용이 보이면 숨기고, 숨겨져 있으면 보이게 함
         if (content.visibility == View.VISIBLE) {
             content.visibility = View.GONE
-            arrow.setImageResource(android.R.drawable.arrow_down_float)
+            arrow.setImageResource(R.drawable.ic_arrow_down)
         } else {
             content.visibility = View.VISIBLE
-            arrow.setImageResource(android.R.drawable.arrow_up_float)
+            arrow.setImageResource(R.drawable.ic_arrow_up)
         }
     }
 } 

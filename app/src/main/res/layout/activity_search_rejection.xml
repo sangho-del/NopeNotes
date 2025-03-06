@@ -39,7 +39,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@android:drawable/editbox_background"
-        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawableStart="@drawable/ic_category"
         android:drawablePadding="8dp"
         android:hint="거절 상황을 검색해보세요..."
         android:inputType="text"

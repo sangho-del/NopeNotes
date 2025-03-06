@@ -28,7 +28,7 @@ class CategoryRejectionActivity : AppCompatActivity() {
                 1,
                 "직장",
                 "상사, 동료, 부하직원과의 거절",
-                R.drawable.ic_category
+                R.drawable.ic_work
             )
         )
 
@@ -38,7 +38,7 @@ class CategoryRejectionActivity : AppCompatActivity() {
                 2,
                 "친구",
                 "친구, 지인과의 거절",
-                R.drawable.ic_smile
+                R.drawable.ic_friend
             )
         )
 
@@ -48,7 +48,7 @@ class CategoryRejectionActivity : AppCompatActivity() {
                 3,
                 "가족",
                 "부모님, 형제자매와의 거절",
-                R.drawable.ic_bad
+                R.drawable.ic_family
             )
         )
 
@@ -58,7 +58,7 @@ class CategoryRejectionActivity : AppCompatActivity() {
                 4,
                 "부부",
                 "배우자와의 거절",
-                R.drawable.ic_light
+                R.drawable.ic_wedding
             )
         )
 
@@ -68,7 +68,7 @@ class CategoryRejectionActivity : AppCompatActivity() {
                 5,
                 "연인",
                 "애인, 데이트 상대와의 거절",
-                R.drawable.ic_list
+                R.drawable.ic_couple
             )
         )
 
@@ -78,7 +78,7 @@ class CategoryRejectionActivity : AppCompatActivity() {
                 6,
                 "선배/후배",
                 "학교, 동아리 선후배와의 거절",
-                R.drawable.ic_tip
+                R.drawable.ic_school
             )
         )
     }

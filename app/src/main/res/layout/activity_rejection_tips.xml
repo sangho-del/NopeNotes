@@ -70,7 +70,7 @@
                         android:id="@+id/arrowTopicChange"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@android:drawable/arrow_down_float" />
+                        android:src="@drawable/ic_arrow_down" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -141,7 +141,7 @@
                         android:id="@+id/arrowCommonInterest"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@android:drawable/arrow_down_float" />
+                        android:src="@drawable/ic_arrow_down" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -212,7 +212,7 @@
                         android:id="@+id/arrowQuestion"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@android:drawable/arrow_down_float" />
+                        android:src="@drawable/ic_arrow_down" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -283,7 +283,7 @@
                         android:id="@+id/arrowHumor"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@android:drawable/arrow_down_float" />
+                        android:src="@drawable/ic_arrow_down" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -354,7 +354,7 @@
                         android:id="@+id/arrowAlternative"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@android:drawable/arrow_down_float" />
+                        android:src="@drawable/ic_arrow_down" />
                 </LinearLayout>
 
                 <LinearLayout
