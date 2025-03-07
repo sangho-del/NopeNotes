@@ -62,7 +62,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="화제 전환하기"
-                        android:textColor="#6200EE"
+                        android:textColor="#333333"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -133,7 +133,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="공통 관심사 언급하기"
-                        android:textColor="#6200EE"
+                        android:textColor="#333333"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -204,7 +204,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="질문으로 대화 이어가기"
-                        android:textColor="#6200EE"
+                        android:textColor="#333333"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -275,7 +275,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="유머 사용하기"
-                        android:textColor="#6200EE"
+                        android:textColor="#333333"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -346,7 +346,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="대안 제시하기"
-                        android:textColor="#6200EE"
+                        android:textColor="#333333"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
