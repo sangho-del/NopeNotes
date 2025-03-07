@@ -40,6 +40,10 @@
             android:label="친구 관계 거절 멘트"
             android:theme="@style/Theme.NopeNotes" />
         <activity
+            android:name=".FriendRejectionDetailActivity"
+            android:label="친구 관계 거절 멘트 상세"
+            android:theme="@style/Theme.NopeNotes" />
+        <activity
             android:name=".FamilyRejectionActivity"
             android:label="가족 관계 거절 멘트"
             android:theme="@style/Theme.NopeNotes" />

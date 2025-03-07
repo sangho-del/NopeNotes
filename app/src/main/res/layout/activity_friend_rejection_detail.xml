@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#F5F5F5"
-    tools:context=".LoverRejectionDetailActivity">
+    tools:context=".FriendRejectionDetailActivity">
 
     <TextView
         android:id="@+id/tvTitle"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:gravity="center"
-        android:text="소개팅 상대"
+        android:text="친한 친구"
         android:textColor="#333333"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -26,7 +26,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="24dp"
         android:gravity="center"
-        android:text="소개팅 상대와의 거절 상황"
+        android:text="오랜 친구와의 거절 상황"
         android:textColor="#666666"
         android:textSize="14sp" />
 
@@ -56,7 +56,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="추가 만남 거절"
+                        android:text="만남 거절"
                         android:textColor="#333333"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -71,7 +71,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="좋은 시간이었지만 제가 찾는 이상형과는 조금 달라서요."
+                        android:text="오늘은 개인적인 일이 있어서 다음에 만나자."
                         android:textColor="#333333"
                         android:textSize="16sp" />
 
@@ -79,7 +79,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="지금은 개인적으로 바빠서 데이트할 여유가 없을 것 같아요."
+                        android:text="지금 다른 약속이 있어서 어렵네."
                         android:textColor="#333333"
                         android:textSize="16sp" />
 
@@ -87,7 +87,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="지금은 연애할 생각이 없어서 친구로 지내는 건 어떨까요?"
+                        android:text="미안한데 오늘은 컨디션이 안 좋아서 다음에 보자."
                         android:textColor="#333333"
                         android:textSize="16sp" />
                 </LinearLayout>
@@ -109,7 +109,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="연락 거절"
+                        android:text="도움 요청 거절"
                         android:textColor="#333333"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -124,7 +124,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="죄송하지만 더 이상 연락하지 않았으면 좋겠어요."
+                        android:text="지금은 내가 바빠서 도와주기 어려울 것 같아."
                         android:textColor="#333333"
                         android:textSize="16sp" />
 
@@ -132,7 +132,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="지금은 다른 사람을 만나고 있어서 연락을 이어가기 어려울 것 같아요."
+                        android:text="그건 내가 잘 모르는 분야라서 도움이 안 될 것 같아."
                         android:textColor="#333333"
                         android:textSize="16sp" />
 
@@ -140,7 +140,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="서로 맞지 않는 것 같아 더 이상 연락하지 않는 게 좋을 것 같아요."
+                        android:text="미안하지만 지금은 내 일도 처리하기 바빠서 어렵네."
                         android:textColor="#333333"
                         android:textSize="16sp" />
                 </LinearLayout>
@@ -162,7 +162,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="정중한 거절"
+                        android:text="금전적 요청 거절"
                         android:textColor="#333333"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -177,7 +177,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="소개해주셔서 감사합니다만, 저와는 맞지 않는 것 같아요."
+                        android:text="지금 나도 경제적으로 여유가 없어서 어렵네."
                         android:textColor="#333333"
                         android:textSize="16sp" />
 
@@ -185,7 +185,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="좋은 분이신 것 같지만 저는 다른 타입을 찾고 있어요."
+                        android:text="미안하지만 지금은 돈을 빌려주기 어려운 상황이야."
                         android:textColor="#333333"
                         android:textSize="16sp" />
 
@@ -193,7 +193,60 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="만남 자체는 즐거웠지만 로맨틱한 감정은 느껴지지 않아서요."
+                        android:text="친구 사이에 금전 거래는 관계를 해칠 수 있어서 조금 부담스러워."
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="모임 참석 거절"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#E0E0E0" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="그날은 다른 일정이 있어서 참석하기 어려울 것 같아."
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="다음 모임에는 꼭 참석할게. 이번에는 어려워서."
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="개인적인 사정이 있어서 이번 모임은 참석하기 어렵네."
                         android:textColor="#333333"
                         android:textSize="16sp" />
                 </LinearLayout>
@@ -230,7 +283,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="아직은 개인 정보를 공유하기에 이른 것 같아요."
+                        android:text="그건 개인적인 정보라서 공유하기 어려워."
                         android:textColor="#333333"
                         android:textSize="16sp" />
 
@@ -238,7 +291,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="서로 더 알아가는 시간을 가진 후에 공유하고 싶어요."
+                        android:text="미안하지만 그건 말하고 싶지 않은 부분이야."
                         android:textColor="#333333"
                         android:textSize="16sp" />
 
@@ -246,60 +299,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="개인 정보는 조금 더 신중하게 공유하고 싶습니다."
-                        android:textColor="#333333"
-                        android:textSize="16sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="소개자에게 전하는 거절"
-                        android:textColor="#333333"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:background="#E0E0E0" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="소개해주셔서 감사합니다만, 지금은 연애할 상황이 아니에요."
-                        android:textColor="#333333"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="좋은 분이었지만 서로 맞지 않는 것 같아 더 이상 만나지 않기로 했어요."
-                        android:textColor="#333333"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="소개해주신 분과는 친구로 지내기로 했어요."
+                        android:text="그 정보는 비공개로 유지하고 싶어."
                         android:textColor="#333333"
                         android:textSize="16sp" />
                 </LinearLayout>
